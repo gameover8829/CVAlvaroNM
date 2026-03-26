@@ -1,3 +1,4 @@
+console.log("JS cargado correctamente");
 // ===== Config =====
 const STORAGE_KEY = "asabor_config_v1";
 const WHATSAPP_NUMERO_KEY = "asabor_whatsapp_v1";
