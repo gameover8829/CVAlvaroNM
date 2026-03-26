@@ -69,7 +69,7 @@ function loadData(){
   const raw = localStorage.getItem(STORAGE_KEY);
   if(!raw){
     localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_DATA));
-    return structuredClone(DEFAULT_DATA);
+    return JSON.parse(JSON.stringify(DEFAULT_DATA));
   }
   try { return JSON.parse(raw); }
   catch {
