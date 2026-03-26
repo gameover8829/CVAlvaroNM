@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Al Sabor de Mi Tierra | Inicio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-active="inicio">
+  <div class="container">
+    <header></header>
+
+    <div class="grid grid-2" style="margin-top:14px">
+      <div class="card" id="infoNegocio"></div>
+
+      <div class="card">
+        <h3>Horarios</h3>
+        <p class="muted" style="margin-top:-6px">Los horarios se actualizan desde el panel interno.</p>
+        <div id="tablaHorarios"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:14px">
+      <div class="card">
+        <h3>¿Cómo pedir?</h3>
+        <ol class="muted" style="margin:0;padding-left:18px">
+          <li>Ve a <b>Menú</b> para ver lo de <b>hoy</b> y <b>mañana</b>.</li>
+          <li>En <b>Pedido</b> selecciona platillos.</li>
+          <li>Presiona <b>Enviar</b> y se abre WhatsApp.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Pedidos por WhatsApp</h3>
+        <p class="muted">Tu pedido se arma automáticamente con nombre, dirección y nota (si quieres).</p>
+        <div class="notice">Si hoy está cerrado, el menú lo mostrará en grande: <b>CERRADO</b>.</div>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="year"></span> Al Sabor de Mi Tierra · Zacatlán, Puebla</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
