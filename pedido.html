@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Al Sabor de Mi Tierra | Pedido</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-active="pedido">
+  <div class="container">
+    <header></header>
+
+    <div class="grid grid-2" style="margin-top:14px">
+      <div class="card">
+        <h2>Hacer pedido</h2>
+        <p class="muted">Selecciona el día y marca los platillos.</p>
+
+        <label class="muted">Día</label>
+        <select id="diaSelect"></select>
+
+        <div style="height:12px"></div>
+        <div id="itemsWrap" class="grid"></div>
+
+        <hr>
+
+        <label class="muted">Nombre</label>
+        <input id="nombre" type="text" placeholder="Ej. Juan Pérez">
+
+        <div style="height:10px"></div>
+        <label class="muted">Dirección o referencia (opcional)</label>
+        <input id="direccion" type="text" placeholder="Ej. Frente al parque...">
+
+        <div style="height:10px"></div>
+        <label class="muted">Nota (opcional)</label>
+        <textarea id="nota" placeholder="Ej. Sin cebolla, salsa aparte..."></textarea>
+
+        <div style="height:12px"></div>
+        <button class="btn secondary" id="btnLimpiar">Limpiar selección</button>
+      </div>
+
+      <div class="card">
+        <h3>Mensaje para WhatsApp</h3>
+        <textarea id="mensaje" readonly></textarea>
+
+        <div style="height:10px"></div>
+        <div class="badge" style="display:flex;justify-content:space-between;align-items:center">
+          <span>Total estimado</span>
+          <b id="total">$0</b>
+        </div>
+
+        <div style="height:12px"></div>
+        <button class="btn ok" id="btnEnviar">Enviar por WhatsApp</button>
+
+        <p class="muted" style="font-size:12px;margin-top:10px">
+          Si un día está cerrado, selecciona otro día para pedir.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="year"></span> Al Sabor de Mi Tierra</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
